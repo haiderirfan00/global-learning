@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  box-shadow: -1rem -1rem 5rem gray;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.leftnav {
+  width: 45%;
+  display: flex;
+}
+
+.leftnav img{
+    height: 10rem;
+}
+
+.leftnav h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-family: alata;
+    letter-spacing: 0.4rem;
+    color: darkred;
+}
+
+.rightnav {
+  width: 55%;
+}
+
+.rightnav ul{
+    display: flex;
+    margin-top: 3.4rem;
+    margin-left: 4rem;
+}
+
+.rightnav ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: poppins;
+    margin-left: 2rem;
+    transition: 0.2s all;
+    color:  #844F55;
+    font-weight: bolder;
+}
+
+.rightnav ul li:hover{
+    color: darkred;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:790px) {
+    .navbar{
+        display: inline-block;
+    }
+    .leftnav{
+        width: 100%;
+    }
+    .rightnav{
+        width: 100%;
+    }
+    .rightnav ul{
+        margin-left: 0rem;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .rightnav ul li{
+        font-size: 1.3rem;
+        margin-left: 0.7rem;
+    }
+
+}
